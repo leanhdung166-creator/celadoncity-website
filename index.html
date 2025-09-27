@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Celadon City - Gamuda Land</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celadon City - Gamuda Land</title>
+    <!-- Kết nối CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <header class="hero" style="background-image: url('head-background.jpg');">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <img src="logo.png" alt="Celadon City" class="logo">
+            <div class="hotline">Hotline: 0985.244.976</div>
+            <div class="register-box">
+                <h2>Đăng ký để nhận ngay mức giá ưu đãi nhất</h2>
+                <ul>
+                    <li>Ưu đãi cực hấp dẫn</li>
+                    <li>Hỗ trợ vay ngân hàng</li>
+                    <li>Chiết khấu tốt nhất</li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Tên của bạn" required>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">ĐĂNG KÝ NGAY</button>
+                </form>
+            </div>
+        </div>
+    </header>
 
-  <!-- Header -->
-  <header class="header" style="background-image: url('images/head-background.jpg')">
-    <div class="overlay">
-      <img src="images/logo.png" alt="Celadon City" class="logo">
-      <div class="hotline">Hotline: 0985.244.976</div>
-      <div class="form-box">
-        <h2>Đăng ký để nhận ngay mức giá ưu đãi nhất</h2>
-        <ul>
-          <li>Ưu đãi cực hấp dẫn</li>
-          <li>Hỗ trợ vay ngân hàng</li>
-          <li>Chiết khấu tốt nhất</li>
-        </ul>
-        <form id="form-top">
-          <input type="text" name="phone" placeholder="Số điện thoại" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <button type="submit">Đăng ký ngay</button>
+    <!-- Tổng thể dự án -->
+    <section class="intro">
+        <h2>TỔNG THỂ MẶT BẰNG DỰ ÁN CELADON CITY</h2>
+        <p>Tọa lạc trên diện tích 82ha, Celadon City thật sự là một khu đô thị sinh thái lý tưởng với khuôn viên cây xanh rộng lớn 
+            cùng nhiều tiện ích đẳng cấp đạt chuẩn quốc tế. Nơi đây được ví như lá phổi xanh của phía Tây thành phố, 
+            giúp cư dân có một cuộc sống cân bằng, chan hòa với thiên nhiên.</p>
+        <div class="images">
+            <img src="image-1.jpg" alt="Celadon City View 1">
+            <img src="image-2.jpg" alt="Celadon City View 2">
+        </div>
+    </section>
+
+    <!-- Nét đẹp hơi thở -->
+    <section class="features">
+        <h2>NÉT ĐẸP HƠI THỞ CỦA CUỘC SỐNG HẠNH PHÚC</h2>
+        <p>Gồm có 4 khu chính mang tên những viên ngọc quý: Ruby, Emerald, Sapphire và Diamond. 
+           Cùng các tiện ích hiện đại chuẩn quốc tế đáp ứng trọn vẹn kỳ vọng về một khu đô thị đẳng cấp vượt bậc.</p>
+        <img src="image-3.jpg" alt="Celadon City Features">
+    </section>
+
+    <!-- Kết nối đa chiều -->
+    <section class="connection">
+        <h2>KẾT NỐI ĐA CHIỀU NĂNG ĐỘNG HIỆN ĐẠI</h2>
+        <p>Celadon City mang đến một không gian sống yên bình chỉ mới 15 phút đến trung tâm TP.HCM. 
+           Với hệ thống giao thông thuận tiện, cư dân dễ dàng di chuyển đến bất kỳ đâu.</p>
+        <div class="images">
+            <img src="image-4.jpg" alt="Kết nối 1">
+        </div>
+    </section>
+
+    <!-- Form cuối -->
+    <footer class="footer">
+        <h2>ĐĂNG KÝ NHẬN TƯ VẤN & CHƯƠNG TRÌNH BÁN HÀNG MỚI NHẤT TỪ PHÒNG KINH DOANH</h2>
+        <form>
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="tel" placeholder="Số điện thoại" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">ĐĂNG KÝ NGAY</button>
         </form>
-        <p id="msg-top"></p>
-      </div>
-    </div>
-  </header>
-
-  <!-- Nội dung -->
-  <main>
-    <section class="section">
-      <h2>TỔNG THỂ MẶT BẰNG DỰ ÁN CELADON CITY</h2>
-      <p>
-        Tọa lạc trên diện tích 82ha, Celadon City thật sự là một khu đô thị sinh thái lý tưởng...
-      </p>
-      <img src="images/image-1.jpg" alt="Mặt bằng">
-    </section>
-
-    <section class="section">
-      <h2>NÉT ĐẸP HƠI THỞ CỦA CUỘC SỐNG HẠNH PHÚC</h2>
-      <p>
-        Gồm có 4 khu chính mang tên những viên ngọc quý...
-      </p>
-      <img src="images/image-2.jpg" alt="Khu căn hộ">
-    </section>
-
-    <section class="section">
-      <h2>KẾT NỐI ĐA CHIỀU NĂNG ĐỘNG HIỆN ĐẠI</h2>
-      <p>
-        Celadon City mang đến...
-      </p>
-      <img src="images/image-3.jpg" alt="Tiện ích">
-    </section>
-
-    <!-- Form cuối trang -->
-    <section class="footer-form">
-      <h2>ĐĂNG KÝ NHẬN TƯ VẤN & CHƯƠNG TRÌNH BÁN HÀNG MỚI NHẤT TỪ PHÒNG KINH DOANH</h2>
-      <form id="form-bottom">
-        <input type="text" name="name" placeholder="Tên của bạn" required>
-        <input type="text" name="phone" placeholder="Số điện thoại" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <button type="submit">Đăng ký ngay</button>
-      </form>
-      <p id="msg-bottom"></p>
-    </section>
-  </main>
-
+    </footer>
 </body>
 </html>
+
