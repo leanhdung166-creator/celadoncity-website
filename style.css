@@ -1,169 +1,116 @@
-/* Reset mặc định */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
-  background: #f4f4f4;
-  color: #333;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px;
 }
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: white;
-}
-
-header img {
-  height: 60px;
-}
-
-header .hotline {
-  background: #2e8b57;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-/* Banner */
-.banner {
-  background: url("images/head-background.jpg") no-repeat center center/cover;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 80px;
-  color: white;
-}
-
-.banner .register-box {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 30px;
+/* Form đăng ký */
+.register {
+  background: #eaf6ff;
+  padding: 20px;
   border-radius: 10px;
-  max-width: 320px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.banner h2 {
-  font-size: 20px;
+.register h2 {
+  margin-bottom: 15px;
+  color: #0066cc;
+}
+
+.register ul {
+  list-style: none;
   margin-bottom: 15px;
 }
 
-.banner ul {
-  list-style: none;
-  margin-bottom: 20px;
+.register ul li {
+  margin: 5px 0;
 }
 
-.banner ul li {
-  margin: 8px 0;
+.register form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.banner input,
-.banner button {
-  width: 100%;
+.register input {
   padding: 10px;
-  margin: 8px 0;
-  border: none;
+  width: 250px;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.banner input {
-  border: 1px solid #ddd;
-}
-
-.banner button {
-  background: #28a745;
-  color: white;
-  font-weight: bold;
+.register button {
+  padding: 10px 20px;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.banner button:hover {
-  background: #218838;
+.register button:hover {
+  background: #004999;
 }
 
-/* Section chung */
+/* Section */
 section {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin-bottom: 50px;
 }
 
-section h2 {
-  color: #2e8b57;
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-section p {
+h2 {
+  text-align: center;
   margin-bottom: 20px;
+  color: #222;
 }
 
-/* Hình ảnh */
+/* Hình ảnh + caption */
 .images {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
 }
 
-.images img {
-  width: 48%;
+figure {
+  background: #fff;
+  padding: 10px;
   border-radius: 10px;
-}
-
-/* Tiện ích (ảnh ghép 4 cái nhỏ) */
-.features img {
-  width: 23%;
-  border-radius: 10px;
-}
-
-/* Footer form */
-.footer-form {
-  background: #a8d08d;
-  padding: 30px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   text-align: center;
 }
 
-.footer-form h2 {
-  margin-bottom: 20px;
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.footer-form form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+figcaption {
+  margin-top: 10px;
 }
 
-.footer-form input,
-.footer-form button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  min-width: 200px;
-}
-
-.footer-form input {
-  border: 1px solid #ccc;
-}
-
-.footer-form button {
-  background: #2e8b57;
-  color: white;
+figcaption h3 {
+  font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
+  color: #0066cc;
+  margin-bottom: 6px;
 }
 
-.footer-form button:hover {
-  background: #1c6b43;
+figcaption p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
 }
+
 
 
