@@ -1,196 +1,169 @@
-/* Reset cơ bản */
+/* Reset mặc định */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  background: #f4f4f4;
   color: #333;
   line-height: 1.6;
 }
 
-/* ===== Header ===== */
-.header {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  position: relative;
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+header img {
+  height: 60px;
+}
+
+header .hotline {
+  background: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Banner */
+.banner {
+  background: url("images/head-background.jpg") no-repeat center center/cover;
+  height: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px;
+  justify-content: flex-start;
+  padding-left: 80px;
+  color: white;
 }
 
-/* Overlay mờ để nổi nội dung */
-.header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+.banner .register-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 320px;
 }
 
-/* Logo bên trái */
-.logo {
-  width: 220px;
-  position: relative;
-  z-index: 2;
-}
-
-/* Form box bên phải */
-.form-box {
-  position: relative;
-  z-index: 2;
-  width: 380px;
-  background: #fff;
-  border-radius: 12px;
-  padding: 25px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.form-box h2 {
+.banner h2 {
   font-size: 20px;
-  color: #2e7d32;
   margin-bottom: 15px;
-  text-align: center;
 }
 
-.form-box ul {
+.banner ul {
   list-style: none;
   margin-bottom: 20px;
 }
 
-.form-box li {
-  margin: 6px 0;
-  color: #555;
+.banner ul li {
+  margin: 8px 0;
 }
 
-.form-box input {
+.banner input,
+.banner button {
   width: 100%;
-  padding: 12px;
-  margin: 6px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.form-box button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 8px;
+  padding: 10px;
+  margin: 8px 0;
   border: none;
-  border-radius: 6px;
-  background: #2e7d32;
-  color: #fff;
+  border-radius: 5px;
+}
+
+.banner input {
+  border: 1px solid #ddd;
+}
+
+.banner button {
+  background: #28a745;
+  color: white;
   font-weight: bold;
-  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.form-box button:hover {
-  background: #1b5e20;
+.banner button:hover {
+  background: #218838;
 }
 
-.hotline {
-  position: relative;
-  z-index: 2;
-  margin: 15px 0;
-  padding: 10px;
-  text-align: center;
-  background: #2e7d32;
-  color: #fff;
-  border-radius: 6px;
-  font-weight: bold;
+/* Section chung */
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* ===== Section nội dung ===== */
-.section {
-  padding: 60px 20px;
-  text-align: center;
+section h2 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
-.section h2 {
-  font-size: 26px;
+section p {
   margin-bottom: 20px;
-  color: #2e7d32;
 }
 
-.section p {
-  max-width: 800px;
-  margin: 0 auto 20px;
+/* Hình ảnh */
+.images {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.section img {
-  width: 85%;
-  max-width: 1000px;
+.images img {
+  width: 48%;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* ===== Footer form ===== */
+/* Tiện ích (ảnh ghép 4 cái nhỏ) */
+.features img {
+  width: 23%;
+  border-radius: 10px;
+}
+
+/* Footer form */
 .footer-form {
-  background: #f1f8e9;
-  padding: 60px 20px;
+  background: #a8d08d;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .footer-form h2 {
-  font-size: 22px;
-  color: #2e7d32;
+  margin-bottom: 20px;
 }
 
 .footer-form form {
-  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-form input,
+.footer-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  min-width: 200px;
 }
 
 .footer-form input {
-  flex: 1 1 220px;
-  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
 }
 
 .footer-form button {
-  padding: 12px 25px;
-  background: #2e7d32;
-  border: none;
-  border-radius: 6px;
-  color: #fff;
+  background: #2e8b57;
+  color: white;
   font-weight: bold;
-  font-size: 15px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .footer-form button:hover {
-  background: #1b5e20;
+  background: #1c6b43;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 900px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .form-box {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-  }
-
-  .logo {
-    width: 180px;
-    margin-bottom: 20px;
-  }
-}
 
